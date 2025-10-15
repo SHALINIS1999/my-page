@@ -1,0 +1,167 @@
+/* Reset & Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f5f7fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Featured Section */
+.featured {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.featured h2 {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.featured .subtitle {
+  font-size: 15px;
+  color: #666;
+  max-width: 700px;
+  margin: 0 auto 50px;
+}
+
+/* Product Cards */
+.product-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.product-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  max-width: 320px;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.product-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.product-info {
+  padding: 15px;
+}
+
+.stars {
+  font-size: 18px;
+  color: #ccc;
+}
+
+.stars .filled {
+  color: gold;
+}
+
+.product-card h3 {
+  font-size: 18px;
+  color: #222;
+  margin: 10px 0 5px;
+}
+
+.description {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.bottom-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price {
+  color: #222;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.reviews {
+  color: #999;
+  font-size: 13px;
+}
+
+/* Footer */
+footer {
+  background-color: #222;
+  color: #ccc;
+  padding: 50px 20px;
+  margin-top: 60px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.footer-box {
+  flex: 1;
+  min-width: 240px;
+}
+
+.footer-box h3 {
+  color: #66cc99;
+  font-size: 22px;
+  margin-bottom: 12px;
+}
+
+.footer-box h4 {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.footer-box ul {
+  list-style: none;
+}
+
+.footer-box ul li {
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.footer-box p i {
+  margin-right: 8px;
+  color: #66cc99;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+  .product-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-card {
+    max-width: 90%;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+}
+}
